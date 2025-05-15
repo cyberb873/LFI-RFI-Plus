@@ -21,3 +21,13 @@ A Python tool to scan for **Local File Inclusion (LFI)** and **Remote File Inclu
 Install `requests` module if needed:
 ```bash
 pip3 install requests
+
+Usage
+➤ Option 1: Directly with Python
+
+python3 scanner.py -u "http://example.com/index.php?page=FUZZ"
+
+➤ Option 2: Using run.sh on Linux
+
+chmod +x run.sh
+./run.sh "http://example.com/index.php?page=FUZZ"
